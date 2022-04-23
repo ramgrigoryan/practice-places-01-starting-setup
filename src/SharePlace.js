@@ -22,8 +22,8 @@ class PlaceFinder {
       successResult => {
         modal.hide();
         const coordinates = {
-          lat: successResult.coords.latitude + Math.random() * 50,
-          lng: successResult.coords.longitude + Math.random() * 50,
+          lat: successResult.coords.latitude + Math.random(),
+          lng: successResult.coords.longitude + Math.random(),
         };
         console.log(coordinates);
       },
